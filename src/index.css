@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Suas customizações extras (como a animação do hambúrguer) podem ir aqui embaixo */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Corta qualquer vazamento lateral */
+}
+
+#root {
+  width: 100%;
+}
