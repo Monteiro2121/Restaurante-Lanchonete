@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 import axios from "axios";
+import imgDuplo from "./assets/duplo.jpg";
+import bigger from "./assets/bigger.jpg";
 import "./PaginaInicial.css";;
 
 // --- TIPAGEM ---
@@ -20,14 +22,14 @@ interface Hamburguer {
       nome: "Gourmet Clássico",
       descricao: "Blend bovino 160g, queijo cheddar, bacon crocante e maionese da casa.",
       preco: "R$ 34,90",
-      imagem: "/burger-1.jpg" // Coloque fotos suculentas aqui
+      imagem: bigger
     },
     {
       id: 2,
       nome: "Double Bacon Blast",
       descricao: "Dois blends 160g, dobro de bacon, cebola caramelizada e barbecue.",
       preco: "R$ 42,90",
-      imagem: "/burger-2.jpg"
+      imagem: imgDuplo
     }
   ];
   
@@ -37,12 +39,12 @@ interface Hamburguer {
       <div className="w-screen min-h-screen bg-[#0f0f0f] text-white font-sans selection:bg-orange-500 overflow-x-hidden">
   {/* IMAGEM DE FUNDO VIA URL */}
         <div 
-            className="absolute inset-0 z-0 opacity-40" 
+            className="absolute inset-15 z-0 opacity-30" 
             style={{ 
             backgroundImage: "url('https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1965&auto=format&fit=crop')", 
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            filter: 'brightness(0.3) contrast(1.2)' // Deixa a imagem escura para o texto ficar legível
+            filter: 'brightness(0.5) contrast(1.1)' // Deixa a imagem escura para o texto ficar legível
             }}
         ></div>
         {/* 2. HERO SECTION - INDUSTRIAL GOURMET (OCUPANDO TODA A LARGURA) */}
@@ -60,15 +62,20 @@ interface Hamburguer {
                 
                 {/* mx-auto aqui centraliza o parágrafo se ele for menor que a largura total */}
                 <p className="text-gray-300 text-lg max-w-md mb-8 mx-auto">
-                    Carne moída no dia, pão artesanal e ingredientes selecionados da nossa terra, com muito sabor!
+                Elevando o nível do seu próximo pedido!
                 </p>
                 
-                {/* Removido o md:justify-start para manter centralizado em todas as telas */}
-                <div className="w-full flex justify-center">
-                    <button className="bg-white text-black px-10 py-4 rounded-md font-black uppercase transition duration-300 ease-in-out hover:bg-orange-500 hover:text-white hover:scale-105 active:scale-95 shadow-lg hover:shadow-orange-500/50">
-                    Fazer Pedido
-                    </button>
-                </div>
+                {/* Substitua o seu botão anterior por este bloco */}
+                  <div className="w-full flex justify-center">
+                    <a 
+                      href="https://wa.me/5579996349409?text=Olá!%20Vi%20a%20loja%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-white text-black px-10 py-4 rounded-md font-black uppercase transition duration-300 ease-in-out hover:bg-orange-500 hover:text-white hover:scale-105 active:scale-95 shadow-lg hover:shadow-orange-500/50"
+                    >
+                      Fazer Pedido
+                    </a>
+                  </div>
                 </div>
                 
                 {/* Imagem centralizada logo abaixo do conteúdo */}
