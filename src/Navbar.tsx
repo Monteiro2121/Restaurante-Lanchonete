@@ -29,7 +29,7 @@ export default function Navbar() {
           </li>
           
           <li>
-            <Link to="/" className="text-sm font-bold uppercase tracking-widest text-orange-500 hover:text-orange-400 transition">
+            <Link to="/endereço" className="text-sm font-bold uppercase tracking-widest text-orange-500 hover:text-orange-400 transition">
               Endereço
             </Link>
           </li>

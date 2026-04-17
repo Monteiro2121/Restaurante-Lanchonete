@@ -105,16 +105,17 @@ export default function Cardapio() {
           ))}
         </div>
       </main>
-
+      <br></br>
       {/* CTA FIXO NO MOBILE */}
-      <div className="fixed bottom-8 left-0 right-0 flex justify-center px-6 z-50">
-        <Link 
-          to="/" 
-          className="bg-white text-black w-full max-w-md py-4 rounded-xl font-black text-center uppercase shadow-2xl hover:bg-orange-500 hover:text-white transition-all active:scale-95"
-        >
-          Voltar para Início
-        </Link>
-      </div>
+      <div className="w-full flex justify-center">
+                    <Link 
+                      to="/" 
+                      rel="noopener noreferrer"
+                      className="bg-white text-black px-10 py-4 rounded-md font-black uppercase transition duration-300 ease-in-out hover:bg-orange-500 hover:text-white hover:scale-105 active:scale-95 shadow-lg hover:shadow-orange-500/50"
+                    >
+                      VOLTAR PARA INÍCIO
+                    </Link>
+                  </div>
     </div>
   );
 }
