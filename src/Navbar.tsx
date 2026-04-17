@@ -1,14 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import './navbar.css';
 import Logo from "./assets/logo.jpg";
-
-// Componente auxiliar para os links do dropdown
-const HoverLink = ({ to, children }) => (
-  <Link to={to} className="block px-4 py-2 hover:bg-orange-500 hover:text-white transition-colors duration-200">
-    {children}
-  </Link>
-);
 
 export default function Navbar() {
   return (
@@ -42,18 +34,6 @@ export default function Navbar() {
             </Link>
           </li>
 
-          {/* DROPDOWN DE CONTATOS */}
-          <li className="relative group">
-            <button className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-gray-300 group-hover:text-white transition">
-              Contatos <span className="text-[10px]">▼</span>
-            </button>
-            
-            {/* Menu Dropdown - Aparece no Hover da 'li' */}
-            <div className="absolute center-0 mt-2 w-40 bg-[#1a1a1a] color-white border border-white/10 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-              <HoverLink to="#">(79) 99999-9999</HoverLink>
-              <HoverLink to="#">(79) 98888-8888</HoverLink>
-            </div>
-          </li>
         </ul>
       </div>
     </nav>

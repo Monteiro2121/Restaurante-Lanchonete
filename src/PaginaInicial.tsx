@@ -1,7 +1,3 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
-import Select from "react-select";
-import axios from "axios";
 import imgDuplo from "./assets/duplo.jpg";
 import bigger from "./assets/bigger.jpg";
 import "./PaginaInicial.css";;
