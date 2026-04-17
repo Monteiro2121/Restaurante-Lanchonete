@@ -73,17 +73,8 @@ interface Hamburguer {
                     </a>
                   </div>
                 </div>
-                
-                {/* Imagem centralizada logo abaixo do conteúdo */}
-                <div className="relative flex justify-center mt-12">
-                <div className="absolute w-54 h-54 bg-orange-500/20 blur-[100px] rounded-full"></div>
-                <img 
-                    src="/burger-hero.png" 
-                    alt="Hambúrguer Gourmet" 
-                    className="relative z-10 w-full max-w-xs md:max-w-sm drop-shadow-[20px_35px_35px_rgba(0,0,0,0.5)] animate-bounce-slow"
-                />
-                </div>
             </div>
+
             </section>
   
         {/* 3. SEÇÃO DE DESTAQUES (TAMBÉM OCUPANDO TODA A LARGURA COM FUNDO PRETO) */}

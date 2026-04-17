@@ -4,12 +4,12 @@ import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 
 const containerStyle = {
   width: "100%",
-  height: "550px",
+  height: "580px",
 };
 
 const center = {
-  lat: -10.9472,
-  lng: -37.0736,
+  lat: -10.9741862,
+  lng: -37.0675029,
 };
 
 export default function Cardapio() {
@@ -25,22 +25,22 @@ export default function Cardapio() {
       
       {/* HEADER */}
       <section className="py-20 bg-gradient-to-b from-orange-600/20 to-transparent text-center">
-        <h1 className="text-5xl md:text-7xl font-black italic uppercase tracking-tighter mb-4">
+        <h1 className="text-5xl md:text-7xl font-black italic uppercase tracking-tighter mb-2">
           <span className="text-orange-500">Nosso </span>Endereço
         </h1>
-        <p className="text-gray-400 max-w-lg mx-auto px-6">
+        <p className="text-gray-400 max-w-lg mx-auto px-1">
           Localizados no coração da gastronomia aracajuana.
         </p>
       </section>
 
       {/* MAPA COM VERIFICAÇÃO DE CARREGAMENTO */}
-      <div className="max-w-6xl mx-auto px-9 py-10">
+      <div className="max-w-6xl mx-auto py-0-12 px-6">
         <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
           {isLoaded ? (
             <GoogleMap
               mapContainerStyle={containerStyle}
               center={center}
-              zoom={15}
+              zoom={18}
             >
               {/* Você pode adicionar Marcadores aqui depois */}
             </GoogleMap>
@@ -53,7 +53,7 @@ export default function Cardapio() {
       </div>
 
       {/* BOTÃO VOLTAR */}
-      <div className="w-full flex justify-center pb-20">
+      <div className="w-full flex justify-center pb-10">
         <Link 
           to="/" 
           className="bg-white text-black px-10 py-4 rounded-md font-black uppercase transition duration-300 ease-in-out hover:bg-orange-500 hover:text-white hover:scale-105 active:scale-95 shadow-lg"
