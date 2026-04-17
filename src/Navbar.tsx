@@ -23,7 +23,7 @@ export default function Navbar() {
         {/* LINKS (Lado Direito / Centralizados conforme o espaço) */}
         <ul className="flex items-center gap-8 list-none m-0 p-0">
           <li>
-            <Link to="/Dashboard" className="text-sm font-bold uppercase tracking-widest text-gray-300 hover:text-orange-500 transition">
+            <Link to="/cardapio" className="text-sm font-bold uppercase tracking-widest text-gray-300 hover:text-orange-500 transition">
               Cardápio 
             </Link>
           </li>
