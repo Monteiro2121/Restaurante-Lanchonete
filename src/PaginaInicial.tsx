@@ -63,7 +63,7 @@ const BurgerCiaHome: React.FC = () => {
           
           <div className="flex justify-center">
             <a 
-              href="https://wa.me/5579996349409?text=Olá!%20Vi%20a%20loja%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." 
+              href="https://wa.me/557991346038?text=Olá!%20Vi%20a%20loja%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white text-black px-8 md:px-12 py-4 rounded-md font-black uppercase transition-all duration-300 hover:bg-orange-500 hover:text-white hover:scale-105 active:scale-95 shadow-xl hover:shadow-orange-500/40 text-sm md:text-base"
